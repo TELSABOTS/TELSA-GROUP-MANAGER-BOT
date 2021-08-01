@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct
 
-from RULES.modules.sql import SESSION, BASE
+from TELSA.modules.sql import SESSION, BASE
 
 
 class Disable(BASE):
