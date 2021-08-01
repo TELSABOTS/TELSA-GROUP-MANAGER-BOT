@@ -7,14 +7,14 @@ from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler, run_async
 from telegram.utils.helpers import mention_markdown, mention_html, escape_markdown
 
-import tg_bot.modules.sql.welcome_sql as sql
-from tg_bot import dispatcher, OWNER_ID, LOGGER
-from tg_bot.modules.helper_funcs.chat_status import user_admin, can_delete
-from tg_bot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from tg_bot.modules.helper_funcs.msg_types import get_welcome_type
-from tg_bot.modules.helper_funcs.string_handling import markdown_parser, \
+import TELSA.modules.sql.welcome_sql as sql
+from TELSA import dispatcher, OWNER_ID, LOGGER
+from TELSA.modules.helper_funcs.chat_status import user_admin, can_delete
+from TELSA.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from TELSA.modules.helper_funcs.msg_types import get_welcome_type
+from TELSA.modules.helper_funcs.string_handling import markdown_parser, \
     escape_invalid_curly_brackets
-from tg_bot.modules.log_channel import loggable
+from TELSA.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
 
