@@ -4,11 +4,11 @@ from typing import List, Dict
 from telegram import Bot, ParseMode, ReplyKeyboardMarkup, KeyboardButton
 from telegram.error import TelegramError
 
-from tg_bot import dispatcher
+from TELSA import dispatcher
 #from tg_bot.modules.translations.strings import tld
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 
-import tg_bot.modules.sql.connection_sql as con_sql
+import TELSA.modules.sql.connection_sql as con_sql
 
 def keyboard(bot, update):
     user = update.effective_user  # type: Optional[User]
