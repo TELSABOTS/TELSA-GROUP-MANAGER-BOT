@@ -150,3 +150,4 @@ def user_not_admin(func):
             return func(bot, update, *args, **kwargs)
 
     return is_not_admin
+
