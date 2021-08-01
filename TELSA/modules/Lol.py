@@ -1,15 +1,13 @@
-
-  
 import time
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
-from TELSA import dispatcher
-from TELSA.modules.disable import DisableAbleCommandHandler
-from TELSA.modules.helper_funcs.chat_status import user_admin
+from tg_bot import dispatcher
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot.modules.helper_funcs.chat_status import user_admin
 
-
+#sleep how many times after each edit in 'police' 
 EDIT_SLEEP = 2
- 
+#edit how many times in 'police' 
 EDIT_TIMES = 6
 
 police_siren = [
@@ -107,13 +105,14 @@ def bomb(bot: Bot, update: Update):
     
 __help__ = f"""
 *ANIMATIONS *
+
  /love : SHE LOVES YOU.
  /bomb : YOU REJECTED HER, SO SHE IS GOING TO SUSCIDE .
  /police : POLICE WILL CATCH YOU. 
  /moon : MOON REVOVLES
  /earth : EARTH REVOLVES
 """
-   
+    
 POLICE_HANDLER = DisableAbleCommandHandler("police", police)
 FBI_HANDLER = DisableAbleCommandHandler("fbi", fbi)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
