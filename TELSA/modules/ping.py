@@ -1,3 +1,6 @@
+#★彡[ᴛᴇʟꜱᴀ ʙᴏᴛꜱ]彡★
+
+
 import html
 import json
 import random
@@ -13,8 +16,8 @@ from telegram.ext import CommandHandler, run_async, Filters
 from telegram import Update, Bot
 from telegram.ext import run_async
 
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot import dispatcher, StartTime
+from TELSA.modules.disable import DisableAbleCommandHandler
+from TELSA import dispatcher, StartTime
 
 from requests import get
 
@@ -54,7 +57,7 @@ def ping(bot: Bot, update: Update):
     end_time = time.time()
     ping_time = str(round((end_time - start_time), 2) % 60)
     uptime = get_readable_time((time.time() - StartTime))
-    update.effective_message.reply_text(f"🏓 Pong!\n⏱️<b>Reply took:</b> {ping_time}s\n🔮<b>Service Uptime:</b> {uptime}", parse_mode=ParseMode.HTML)
+    update.effective_message.reply_text(f"CURRENT PING!\n⏳<b>PING:</b> {ping_time}s\n⏰<b>UPTIME:</b> {uptime}", parse_mode=ParseMode.HTML)
 
 @run_async
 def uptime(bot: Bot, update: Update):
@@ -62,10 +65,10 @@ def uptime(bot: Bot, update: Update):
 	update.effective_message.reply_text(f"🔮Service Uptime: {uptime}")    
 
 __help__ = """
-- /ping :get ping time of bot to telegram server
-- /uptime: Find last service update time
+- /ping :CURRENT PING
+- /uptime:UPTIME STATUS
 """
-__mod_name__ = "PING"
+__mod_name__ = "🌐PING🌐"
 
 PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 UPTIME_HANDLER = DisableAbleCommandHandler("uptime", uptime)
