@@ -29,7 +29,7 @@ def do_translate(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """ 
-/tr (language code) REPLY TO THE MESSAGE YOU WANT TO TRANSLATE .
+/tr (language code) REPLY TO THE MESSAGE YOU WANT TO TRANSLATE 
 
 FOR LANG CODES CHECK OUT THIS https://telegra.ph/LANGAUAGE-CODES-FOR-TELSA-GROUP-MANAGING-BOT-07-26-2
 
