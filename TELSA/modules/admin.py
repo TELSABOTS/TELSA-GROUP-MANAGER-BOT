@@ -8,11 +8,11 @@ from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin
-from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.modules.log_channel import loggable
+from TELSA import dispatcher
+from TELSA.modules.disable import DisableAbleCommandHandler
+from TELSA.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin
+from TELSA.modules.helper_funcs.extraction import extract_user
+from TELSA.modules.log_channel import loggable
 
 
 @run_async
