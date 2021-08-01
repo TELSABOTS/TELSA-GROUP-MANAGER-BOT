@@ -15,7 +15,7 @@ from TELSA.modules.helper_funcs.string_handling import extract_time
 
 # from tg_bot.modules.translations.strings import tld
 
-from tg_bot.modules.keyboard import keyboard
+from TELSA.modules.keyboard import keyboard
 
 @user_admin
 @run_async
