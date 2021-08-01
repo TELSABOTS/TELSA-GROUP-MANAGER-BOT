@@ -7,13 +7,13 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import tg_bot.modules.sql.global_bans_sql as sql
-from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, STRICT_GBAN
-from tg_bot.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from tg_bot.modules.helper_funcs.filters import CustomFilters
-from tg_bot.modules.helper_funcs.misc import send_to_list
-from tg_bot.modules.sql.users_sql import get_all_chats
+import TELSA.modules.sql.global_bans_sql as sql
+from TELSA import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, STRICT_GBAN
+from TELSA.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from TELSA.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from TELSA.modules.helper_funcs.filters import CustomFilters
+from TELSA.modules.helper_funcs.misc import send_to_list
+from TELSA.modules.sql.users_sql import get_all_chats
 
 GBAN_ENFORCE_GROUP = 6
 
