@@ -1,9 +1,9 @@
 import time
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import user_admin
+from TELSA import dispatcher
+from TELSA.modules.disable import DisableAbleCommandHandler
+from TELSA.modules.helper_funcs.chat_status import user_admin
 
 #sleep how many times after each edit in 'police' 
 EDIT_SLEEP = 2
