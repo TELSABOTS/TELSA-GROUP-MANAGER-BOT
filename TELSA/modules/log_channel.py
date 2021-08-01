@@ -1,7 +1,7 @@
 from functools import wraps
 from typing import Optional
 
-from tg_bot.modules.helper_funcs.misc import is_module_loaded
+from TELSA.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
