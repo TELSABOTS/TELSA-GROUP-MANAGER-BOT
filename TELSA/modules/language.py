@@ -1,5 +1,5 @@
-from tg_bot.modules.sql.translation import switch_to_locale, prev_locale
-from tg_bot.modules.translations.strings import tld
+from TELSA.modules.sql.translation import switch_to_locale, prev_locale
+from TELSA.modules.translations.strings import tld
 from telegram.ext import CommandHandler
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from TELSA import dispatcher
