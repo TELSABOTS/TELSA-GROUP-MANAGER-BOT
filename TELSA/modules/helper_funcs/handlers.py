@@ -1,4 +1,3 @@
-  
 import telegram.ext as tg
 from telegram import Update
 
