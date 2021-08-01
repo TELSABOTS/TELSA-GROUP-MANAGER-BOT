@@ -2,13 +2,13 @@ from tg_bot.modules.sql.translation import switch_to_locale, prev_locale
 from tg_bot.modules.translations.strings import tld
 from telegram.ext import CommandHandler
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
-from tg_bot import dispatcher
-from tg_bot.modules.translations.list_locale import list_locales
-from tg_bot.modules.helper_funcs.chat_status import user_admin
+from TELSA import dispatcher
+from TELSA.modules.translations.list_locale import list_locales
+from TELSA.modules.helper_funcs.chat_status import user_admin
 from telegram.ext import CallbackQueryHandler
 import re
 
-from tg_bot.modules.connection import connected
+from TELSA.modules.connection import connected
 
 
 @user_admin
