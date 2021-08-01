@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct
 
-from tg_bot.modules.sql import SESSION, BASE
+from RULES.modules.sql import SESSION, BASE
 
 
 class Disable(BASE):
