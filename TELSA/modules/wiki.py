@@ -12,9 +12,9 @@ import requests
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
-from tg_bot import dispatcher
-from tg_bot.__main__ import STATS, USER_INFO
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from TELSA import dispatcher
+from TELSA.__main__ import STATS, USER_INFO
+from TELSA.modules.disable import DisableAbleCommandHandler
 import wikipedia
 
 def wiki(bot: Bot, update: Update, args):
