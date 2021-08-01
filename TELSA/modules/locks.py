@@ -9,14 +9,14 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import tg_bot.modules.sql.locks_sql as sql
-from tg_bot import dispatcher, SUDO_USERS, LOGGER
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
+import TELSA.modules.sql.locks_sql as sql
+from TELSA import dispatcher, SUDO_USERS, LOGGER
+from TELSA.modules.disable import DisableAbleCommandHandler
+from TELSA.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
     bot_can_delete, is_bot_admin
-from tg_bot.modules.helper_funcs.filters import CustomFilters
-from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import users_sql
+from TELSA.modules.helper_funcs.filters import CustomFilters
+from TELSA.modules.log_channel import loggable
+from TELSA.modules.sql import users_sql
 
 LOCK_TYPES = {'sticker': Filters.sticker,
               'audio': Filters.audio,
