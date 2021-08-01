@@ -8,10 +8,10 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, RegexHandler, run_async, Filters, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-from tg_bot import dispatcher, LOGGER
-from tg_bot.modules.helper_funcs.chat_status import user_not_admin, user_admin
-from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import reporting_sql as sql
+from TELSA import dispatcher, LOGGER
+from TELSA.modules.helper_funcs.chat_status import user_not_admin, user_admin
+from TELSA.modules.log_channel import loggable
+from TELSA.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
 
