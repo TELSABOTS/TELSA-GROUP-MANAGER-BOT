@@ -17,7 +17,7 @@ from TELSA.modules.helper_funcs.misc import build_keyboard
 from TELSA.modules.helper_funcs.string_handling import split_quotes, button_markdown_parser
 from TELSA.modules.sql import cust_filters_sql as sql
 
-from tg_bot.modules.connection import connected
+from TELSA.modules.connection import connected
 
 HANDLER_GROUP = 10
 BASIC_FILTER_STRING = "*Filters in this chat:*\n"
